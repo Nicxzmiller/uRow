@@ -1,0 +1,44 @@
+import React from 'react';
+import Icon1 from '../../images/svg-1.svg';
+import Icon2 from '../../images/svg-5.svg';
+import Icon3 from '../../images/svg-4.svg';
+import {
+    ServicesCard,
+    ServicesContainer,
+    ServicesH1,
+    ServicesH2,
+    ServicesIcon, ServicesP,
+    ServicesWrapper
+} from "./ServicesElements";
+
+const Services = () => {
+    return(
+        <ServicesContainer id='services'>
+            <ServicesH1>Our Services</ServicesH1>
+            <ServicesWrapper>
+                <ServicesCard>
+                    <ServicesIcon src={Icon1}>
+                        <ServicesH2>Reduce Expenses</ServicesH2>
+                        <ServicesP>We help reduce fees and increase your overall revenue.</ServicesP>
+                    </ServicesIcon>
+                </ServicesCard>
+
+                <ServicesCard>
+                    <ServicesIcon src={Icon2}>
+                        <ServicesH2>Virtual Offices</ServicesH2>
+                        <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                    </ServicesIcon>
+                </ServicesCard>
+
+                <ServicesCard>
+                    <ServicesIcon src={Icon3}>
+                        <ServicesH2>Premium benefits</ServicesH2>
+                        <ServicesP>Unlock our special membership card that returns <b color="#01bf71">5%</b> cash back.</ServicesP>
+                    </ServicesIcon>
+                </ServicesCard>
+            </ServicesWrapper>
+        </ServicesContainer>
+    )
+}
+
+export default Services;
