@@ -31,7 +31,7 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
                         <ServicesH2>Premium benefits</ServicesH2>
-                        <ServicesP>Unlock our special membership card that returns <b color="#01bf71">5%</b> cash back.</ServicesP>
+                        <ServicesP>Unlock our special membership card that returns <b color={'#01bf71'}>5%</b> cash back.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
